@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <title>Redirecting...</title>
   <script>
     // リダイレクト先のURLを変数にまとめる
-    const redirectUrl = "https://yoshito.me/tmu/?tmu.yoshito.one"; // ← ここだけ書き換えればOK
+    const redirectUrl = "https://yoshito.me/tmu/"; // ← ここだけ書き換えればOK
 
-    window.onload = function() {
+    window.onload = function () {
       window.location.href = redirectUrl;
     };
   </script>
 </head>
+
 <body>
-  <p>リダイレクト中です。もし自動的に移動しない場合は <a id="manualLink" href="https://yoshito.me/tmu/?tmu.yoshito.one">こちら</a> をクリックしてください。</p>
+  <p>リダイレクト中です。もし自動的に移動しない場合は <a id="manualLink" href="https://yoshito.me/tmu">こちら</a> をクリックしてください。</p>
 
   <script>
     // 手動リンクのhrefにも同じURLを設定
     document.getElementById("manualLink").href = redirectUrl;
   </script>
 </body>
+
 </html>
